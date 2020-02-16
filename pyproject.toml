@@ -2,7 +2,7 @@
 name = "xrcache"
 version = "0.0.2"
 description = "On-disk cache for functions operating on xarray.DataArrays and Datasets"
-authors = ["Florian Knoop <florian_knoop@gmx.de>"]
+authors = ["Florian Knoop"]
 license = "ISC"
 readme = "README.md"
 repository = "https://github.com/flokno/xrcache"

@@ -4,7 +4,7 @@ xrcache | on-disk cache for numerical functions working with xarray
 ![python](https://img.shields.io/badge/python-3.5--3.8-lightgrey.svg?style=flat)
 [![pypi](https://img.shields.io/pypi/v/xrcache.svg?style=flat)](https://pypi.org/project/xrcache/)
 ![license](https://img.shields.io/pypi/l/xrcache.svg?color=red&style=flat)
-[![code style](https://img.shields.io/badge/code%20style-black-202020.svg?style=flat-square)](https://github.com/ambv/black)
+[![code style](https://img.shields.io/badge/code%20style-black-202020.svg?style=flat)](https://github.com/ambv/black)
 
 ## What is this?
 
@@ -55,4 +55,5 @@ Check out the notebooks in `/doc`.
 ## Changelog
 
 v.0.0.2: include project description on pypi
+
 v.0.0.1: initial commit

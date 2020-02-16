@@ -1,8 +1,12 @@
 [tool.poetry]
 name = "xrcache"
-version = "0.0.1"
+version = "0.0.2"
 description = "On-disk cache for functions operating on xarray.DataArrays and Datasets"
 authors = ["Florian Knoop <florian_knoop@gmx.de>"]
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/flokno/xrcache"
+keywords = ["xarray", "cache", "caching"]
 
 [tool.poetry.dependencies]
 python = "^3.5"

@@ -54,4 +54,5 @@ Check out the notebooks in `/doc`.
 
 ## Changelog
 
-v.0.0.1: initial release
+v.0.0.2: include project description on pypi
+v.0.0.1: initial commit

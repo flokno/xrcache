@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "xrcache"
+version = "0.0.1"
+description = "On-disk cache for functions operating on xarray.DataArrays and Datasets"
+authors = ["Florian Knoop <florian_knoop@gmx.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+xarray = ">=0.11.0"
+netCDF4 = ">=1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3"
+pytest-flake8 = "^1.0"
+isort = "^4.3.21"
+
+[tool.black]
+target-version = ['py37']
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

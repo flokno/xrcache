@@ -31,8 +31,7 @@ import xrcache as xc
 # create a generic named dataset and assign a hash to its `attrs`
 ds = xr.Dataset({"bar": ("x", [1, 2, 3, 4]), "x": list("abcd")})
 ds.attrs.update({"name": "dataset"})  # <- name your data!
-hash_str = xc.get_hash(ds.bar.data)
-ds.attrs.update({xc.keys.hash: hash_str})  # <- important
+ds.attrs.update({xc.keys.hash: "some_hash"})  # <- important
 
 
 # define some function that works on the dataset, e.g.

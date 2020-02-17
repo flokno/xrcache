@@ -1,10 +1,14 @@
-xrcache | on-disk cache for numerical functions working with xarray
+WIP: xrcache | on-disk cache for numerical functions working with xarray
 ===
 
 ![python](https://img.shields.io/badge/python-3.5--3.8-lightgrey.svg?style=flat)
 [![pypi](https://img.shields.io/pypi/v/xrcache.svg?style=flat)](https://pypi.org/project/xrcache/)
 ![license](https://img.shields.io/pypi/l/xrcache.svg?color=red&style=flat)
 [![code style](https://img.shields.io/badge/code%20style-black-202020.svg?style=flat)](https://github.com/ambv/black)
+
+## Disclaimer
+
+This is work in progress, things change fast.
 
 ## What is this?
 
@@ -53,6 +57,8 @@ def cached_function(dataset):
 Check out the notebooks in `/doc`.
 
 ## Changelog
+
+v0.0.4: Allow `func(..., cache=False, hash='some_other_hash')` for more fine grained control. Add 3 digits of the hash to the cache file to avoid clashes.
 
 v0.0.3: Add array/dataset names to stored files, introduce `@stored`, simplify attached data, allow `@cached(verbose=True)`
 

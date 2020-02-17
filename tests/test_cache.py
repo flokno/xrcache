@@ -35,8 +35,9 @@ def test_cache_dataset(tmp_path):
     xc._path_cache = tmp_path
 
     a = some_dataset_function(ds)
+    filename = xc.cache_filename(a, some_dataset_function)
 
-    assert (xc.path_cache() / f"{dataset_name}__some_dataset_function.nc").exists()
+    assert (xc.path_cache() / filename).exists()
     assert xc.path_log().exists()
 
     b = some_dataset_function(ds)
@@ -49,8 +50,9 @@ def test_cache_dataarray(tmp_path):
     xc._path_cache = tmp_path
 
     a = some_dataarray_function(da)
+    filename = xc.cache_filename(a, some_dataarray_function)
 
-    assert (xc.path_cache() / f"{dataarray_name}__some_dataarray_function.nc").exists()
+    assert (xc.path_cache() / filename).exists()
     assert xc.path_log().exists()
 
     b = some_dataarray_function(da)

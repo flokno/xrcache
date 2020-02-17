@@ -28,8 +28,9 @@ People who like to work with `xarray.DataArray` and `xarray.Dataset` and like to
 import xarray as xr
 import xrcache as xc
 
-# create a generic dataset and assign a hash to its `attrs`
+# create a generic named dataset and assign a hash to its `attrs`
 ds = xr.Dataset({"bar": ("x", [1, 2, 3, 4]), "x": list("abcd")})
+ds.attrs.update({"name": "dataset"})  # <- name your data!
 hash_str = xc.get_hash(ds.bar.data)
 ds.attrs.update({xc.keys.hash: hash_str})  # <- important
 
@@ -54,6 +55,8 @@ Check out the notebooks in `/doc`.
 
 ## Changelog
 
-v.0.0.2: include project description on pypi
+v0.0.3: Add array/dataset names to stored files, introduce `@stored`, simplify attached data, allow `@cached(verbose=True)`
 
-v.0.0.1: initial commit
+v0.0.2: include project description on pypi
+
+v0.0.1: initial commit

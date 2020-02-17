@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xrcache"
-version = "0.0.2"
+version = "0.0.3"
 description = "On-disk cache for functions operating on xarray.DataArrays and Datasets"
 authors = ["Florian Knoop"]
 license = "ISC"
